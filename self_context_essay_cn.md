@@ -211,3 +211,13 @@
 我特意提这件事，是因为这种工作模式本身就是文章要说的东西的一个实例——**AI 作为工具协助人类思考的外化，但不替代人类产出新的整合视角**。如果有一天 AI 能独立产出像这篇文章这样的整合视角并主动写出来发表，那它就不再是工具，而是变成了我文中描述的那种"可能涌现出新智能"的系统。在那之前，我们和 AI 的关系只能是这种——**人类负责跨越边界，AI 负责精炼表达**。
 
 这种分工不是我们屈就，是当前架构下的最优配置。但它也在提醒我们——如果想让 AI 超越工具，架构必须改变。至于改变的方向，我在上文给出了一个猜想和一个最小可行实验，仅供参考，欢迎反驳。
+
+## License
+
+This work is licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
+
+You are free to share and adapt this work for any purpose, including commercially, as long as you give appropriate credit, provide a link to the license, and indicate if changes were made.
+
+Author: langram
+First published: 2026.04.25
+Original location: https://github.com/langram/self_context_essay
