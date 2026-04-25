@@ -220,3 +220,13 @@ This essay is the product of many extended conversations between me and Claude (
 I disclose this for two reasons. First, because honesty is cheap and the alternative is worse — anyone reading carefully will sense AI involvement, and concealment damages credibility. Second, because **this collaboration mode is itself an instance of the essay's argument**: AI as a tool that helps a human externalize and refine thinking, but does not itself generate the integrative move. If, one day, AI could autonomously produce essays of this kind — proposing genuinely new conceptual integrations and publishing them under its own initiative — it would no longer be a tool. It would have become the kind of system this essay describes as the hypothetical emergence point.
 
 Until then, the division of labor stays roughly: **the human reaches across boundaries; the AI refines the expression**. This isn't a concession. It's the optimal configuration under current architectures. But the configuration also reminds us: **for AI to become more than a tool, the architecture must change**. The direction of that change is what I've conjectured above. Refutations welcome.
+
+## License
+
+This work is licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
+
+You are free to share and adapt this work for any purpose, including commercially, as long as you give appropriate credit, provide a link to the license, and indicate if changes were made.
+
+Author: langram
+First published: 2026.04.25
+Original location: https://github.com/langram/self_context_essay
