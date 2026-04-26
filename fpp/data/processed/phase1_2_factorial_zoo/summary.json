@@ -1,0 +1,195 @@
+{
+  "timestamp": "20260426_235357",
+  "git_commit": "1d2229c",
+  "elapsed_seconds": 13.823807954788208,
+  "n_inputs": 24,
+  "n_converged": 24,
+  "basin_distribution": {
+    "capital": 12,
+    "lowercase": 12
+  },
+  "max_iter": 1000,
+  "factor_effects": {
+    "case": {
+      "n_within_factor_pairs": 12,
+      "n_basin_flip": 0,
+      "flip_rate": 0.0,
+      "flip_examples": []
+    },
+    "markup": {
+      "n_within_factor_pairs": 12,
+      "n_basin_flip": 12,
+      "flip_rate": 1.0,
+      "flip_examples": [
+        {
+          "fixed": {
+            "case": "capital",
+            "punct": "high",
+            "content": "natural"
+          },
+          "a_factor": "with",
+          "a_idx": 0,
+          "a_basin": "capital",
+          "b_factor": "without",
+          "b_idx": 2,
+          "b_basin": "lowercase"
+        },
+        {
+          "fixed": {
+            "case": "capital",
+            "punct": "low",
+            "content": "natural"
+          },
+          "a_factor": "with",
+          "a_idx": 1,
+          "a_basin": "capital",
+          "b_factor": "without",
+          "b_idx": 3,
+          "b_basin": "lowercase"
+        },
+        {
+          "fixed": {
+            "case": "lowercase",
+            "punct": "high",
+            "content": "natural"
+          },
+          "a_factor": "with",
+          "a_idx": 4,
+          "a_basin": "capital",
+          "b_factor": "without",
+          "b_idx": 6,
+          "b_basin": "lowercase"
+        },
+        {
+          "fixed": {
+            "case": "lowercase",
+            "punct": "low",
+            "content": "natural"
+          },
+          "a_factor": "with",
+          "a_idx": 5,
+          "a_basin": "capital",
+          "b_factor": "without",
+          "b_idx": 7,
+          "b_basin": "lowercase"
+        },
+        {
+          "fixed": {
+            "case": "capital",
+            "punct": "high",
+            "content": "code"
+          },
+          "a_factor": "with",
+          "a_idx": 8,
+          "a_basin": "capital",
+          "b_factor": "without",
+          "b_idx": 10,
+          "b_basin": "lowercase"
+        },
+        {
+          "fixed": {
+            "case": "capital",
+            "punct": "low",
+            "content": "code"
+          },
+          "a_factor": "with",
+          "a_idx": 9,
+          "a_basin": "capital",
+          "b_factor": "without",
+          "b_idx": 11,
+          "b_basin": "lowercase"
+        },
+        {
+          "fixed": {
+            "case": "lowercase",
+            "punct": "high",
+            "content": "code"
+          },
+          "a_factor": "with",
+          "a_idx": 12,
+          "a_basin": "capital",
+          "b_factor": "without",
+          "b_idx": 14,
+          "b_basin": "lowercase"
+        },
+        {
+          "fixed": {
+            "case": "lowercase",
+            "punct": "low",
+            "content": "code"
+          },
+          "a_factor": "with",
+          "a_idx": 13,
+          "a_basin": "capital",
+          "b_factor": "without",
+          "b_idx": 15,
+          "b_basin": "lowercase"
+        },
+        {
+          "fixed": {
+            "case": "capital",
+            "punct": "high",
+            "content": "random"
+          },
+          "a_factor": "with",
+          "a_idx": 16,
+          "a_basin": "capital",
+          "b_factor": "without",
+          "b_idx": 18,
+          "b_basin": "lowercase"
+        },
+        {
+          "fixed": {
+            "case": "capital",
+            "punct": "low",
+            "content": "random"
+          },
+          "a_factor": "with",
+          "a_idx": 17,
+          "a_basin": "capital",
+          "b_factor": "without",
+          "b_idx": 19,
+          "b_basin": "lowercase"
+        },
+        {
+          "fixed": {
+            "case": "lowercase",
+            "punct": "high",
+            "content": "random"
+          },
+          "a_factor": "with",
+          "a_idx": 20,
+          "a_basin": "capital",
+          "b_factor": "without",
+          "b_idx": 22,
+          "b_basin": "lowercase"
+        },
+        {
+          "fixed": {
+            "case": "lowercase",
+            "punct": "low",
+            "content": "random"
+          },
+          "a_factor": "with",
+          "a_idx": 21,
+          "a_basin": "capital",
+          "b_factor": "without",
+          "b_idx": 23,
+          "b_basin": "lowercase"
+        }
+      ]
+    },
+    "punct": {
+      "n_within_factor_pairs": 12,
+      "n_basin_flip": 0,
+      "flip_rate": 0.0,
+      "flip_examples": []
+    },
+    "content": {
+      "n_within_factor_pairs": 24,
+      "n_basin_flip": 0,
+      "flip_rate": 0.0,
+      "flip_examples": []
+    }
+  }
+}
