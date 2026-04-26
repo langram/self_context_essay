@@ -1,0 +1,340 @@
+{
+  "thresholds": {
+    "lowercase_cos_min": 0.999,
+    "capital_cos_max": 0.7
+  },
+  "basin_distribution": {
+    "capital": 10,
+    "lowercase": 8,
+    "hybrid": 12
+  },
+  "per_input": [
+    {
+      "idx": 0,
+      "category": "html",
+      "cos_to_phase1_universal": 0.4903346300125122,
+      "basin": "capital"
+    },
+    {
+      "idx": 1,
+      "category": "html",
+      "cos_to_phase1_universal": 0.49033451080322266,
+      "basin": "capital"
+    },
+    {
+      "idx": 2,
+      "category": "html",
+      "cos_to_phase1_universal": 0.49033451080322266,
+      "basin": "capital"
+    },
+    {
+      "idx": 3,
+      "category": "html",
+      "cos_to_phase1_universal": 0.49033457040786743,
+      "basin": "capital"
+    },
+    {
+      "idx": 4,
+      "category": "html",
+      "cos_to_phase1_universal": 0.49033451080322266,
+      "basin": "capital"
+    },
+    {
+      "idx": 5,
+      "category": "xml",
+      "cos_to_phase1_universal": 0.4903346598148346,
+      "basin": "capital"
+    },
+    {
+      "idx": 6,
+      "category": "xml",
+      "cos_to_phase1_universal": 0.49033457040786743,
+      "basin": "capital"
+    },
+    {
+      "idx": 7,
+      "category": "xml",
+      "cos_to_phase1_universal": 0.4903346300125122,
+      "basin": "capital"
+    },
+    {
+      "idx": 8,
+      "category": "xml",
+      "cos_to_phase1_universal": 0.49033451080322266,
+      "basin": "capital"
+    },
+    {
+      "idx": 9,
+      "category": "xml",
+      "cos_to_phase1_universal": 0.9999988079071045,
+      "basin": "lowercase"
+    },
+    {
+      "idx": 10,
+      "category": "json",
+      "cos_to_phase1_universal": 0.9956294298171997,
+      "basin": "hybrid"
+    },
+    {
+      "idx": 11,
+      "category": "json",
+      "cos_to_phase1_universal": 0.9947484731674194,
+      "basin": "hybrid"
+    },
+    {
+      "idx": 12,
+      "category": "json",
+      "cos_to_phase1_universal": 0.9956276416778564,
+      "basin": "hybrid"
+    },
+    {
+      "idx": 13,
+      "category": "json",
+      "cos_to_phase1_universal": 0.9961961507797241,
+      "basin": "hybrid"
+    },
+    {
+      "idx": 14,
+      "category": "json",
+      "cos_to_phase1_universal": 0.9947526454925537,
+      "basin": "hybrid"
+    },
+    {
+      "idx": 15,
+      "category": "latex",
+      "cos_to_phase1_universal": 0.9999992847442627,
+      "basin": "lowercase"
+    },
+    {
+      "idx": 16,
+      "category": "latex",
+      "cos_to_phase1_universal": 0.9999991059303284,
+      "basin": "lowercase"
+    },
+    {
+      "idx": 17,
+      "category": "latex",
+      "cos_to_phase1_universal": 0.9855117797851562,
+      "basin": "hybrid"
+    },
+    {
+      "idx": 18,
+      "category": "latex",
+      "cos_to_phase1_universal": 0.5950477719306946,
+      "basin": "capital"
+    },
+    {
+      "idx": 19,
+      "category": "latex",
+      "cos_to_phase1_universal": 0.9838970899581909,
+      "basin": "hybrid"
+    },
+    {
+      "idx": 20,
+      "category": "pure_brackets",
+      "cos_to_phase1_universal": 0.997498631477356,
+      "basin": "hybrid"
+    },
+    {
+      "idx": 21,
+      "category": "pure_brackets",
+      "cos_to_phase1_universal": 0.9974988102912903,
+      "basin": "hybrid"
+    },
+    {
+      "idx": 22,
+      "category": "pure_brackets",
+      "cos_to_phase1_universal": 0.9974988102912903,
+      "basin": "hybrid"
+    },
+    {
+      "idx": 23,
+      "category": "pure_brackets",
+      "cos_to_phase1_universal": 0.9974988102912903,
+      "basin": "hybrid"
+    },
+    {
+      "idx": 24,
+      "category": "pure_brackets",
+      "cos_to_phase1_universal": 0.9974988102912903,
+      "basin": "hybrid"
+    },
+    {
+      "idx": 25,
+      "category": "markdown_list",
+      "cos_to_phase1_universal": 0.9995387196540833,
+      "basin": "lowercase"
+    },
+    {
+      "idx": 26,
+      "category": "markdown_list",
+      "cos_to_phase1_universal": 0.9995328187942505,
+      "basin": "lowercase"
+    },
+    {
+      "idx": 27,
+      "category": "markdown_list",
+      "cos_to_phase1_universal": 0.9995556473731995,
+      "basin": "lowercase"
+    },
+    {
+      "idx": 28,
+      "category": "markdown_list",
+      "cos_to_phase1_universal": 0.9999997019767761,
+      "basin": "lowercase"
+    },
+    {
+      "idx": 29,
+      "category": "markdown_list",
+      "cos_to_phase1_universal": 0.9995591640472412,
+      "basin": "lowercase"
+    }
+  ],
+  "probes": {
+    "probe-basin": {
+      "name": "probe-basin",
+      "n_classes": 3,
+      "n_samples": 30,
+      "cv": "LOO",
+      "accuracy": 0.9,
+      "accuracy_std": 0.3,
+      "chance": 0.4,
+      "fold_accs": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "probe-fine-global": {
+      "name": "probe-fine-global",
+      "n_classes": 6,
+      "n_samples": 30,
+      "cv": "LOO",
+      "accuracy": 0.8333333333333334,
+      "accuracy_std": 0.3726779962499649,
+      "chance": 0.16666666666666666,
+      "fold_accs": [
+        1.0,
+        1.0,
+        1.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.0,
+        1.0
+      ]
+    },
+    "probe-fine-within-capital": {
+      "name": "probe-fine-within-capital",
+      "n_classes": 3,
+      "n_samples": 10,
+      "cv": "LOO",
+      "accuracy": 0.8,
+      "accuracy_std": 0.4,
+      "chance": 0.5,
+      "fold_accs": [
+        1.0,
+        1.0,
+        1.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.0
+      ]
+    },
+    "probe-fine-within-hybrid": {
+      "name": "probe-fine-within-hybrid",
+      "n_classes": 3,
+      "n_samples": 12,
+      "cv": "LOO",
+      "accuracy": 1.0,
+      "accuracy_std": 0.0,
+      "chance": 0.4166666666666667,
+      "fold_accs": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "probe-fine-within-lowercase": {
+      "name": "probe-fine-within-lowercase",
+      "n_classes": 3,
+      "n_samples": 8,
+      "cv": "LOO",
+      "accuracy": 0.75,
+      "accuracy_std": 0.4330127018922193,
+      "chance": 0.625,
+      "fold_accs": [
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.0,
+        1.0
+      ]
+    }
+  }
+}
