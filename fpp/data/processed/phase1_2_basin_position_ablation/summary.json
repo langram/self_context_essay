@@ -1,0 +1,26 @@
+{
+  "timestamp": "20260426_234056",
+  "git_commit": "b9f47bd",
+  "elapsed_seconds": 4.5675740242004395,
+  "n_inputs": 30,
+  "max_iter": 1000,
+  "B_basin_distribution": {
+    "capital": 10,
+    "lowercase": 8,
+    "hybrid": 12
+  },
+  "G_basin_distribution_after_cancelpos": {
+    "lowercase": 25,
+    "hybrid": 5
+  },
+  "basin_transitions_BtoG": {
+    "capital->lowercase": 6,
+    "capital->hybrid": 4,
+    "lowercase->lowercase": 8,
+    "hybrid->lowercase": 11,
+    "hybrid->hybrid": 1
+  },
+  "n_converged": 30,
+  "mean_cos_to_B_baseline": 0.8813831746578217,
+  "min_cos_to_B_baseline": 0.5015071630477905
+}
