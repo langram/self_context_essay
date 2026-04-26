@@ -12,7 +12,7 @@ I am not an AI researcher. I am a programmer and independent thinker who has, fo
 
 This essay is an attempt to name that absence, suggest what it might take to overcome it, and acknowledge — at length — the difficulties any such attempt would face. The title borrows its rhythm from a more famous paper for a reason: I think the field's hard-won insight that *attention is all you need* (for a particular set of capabilities) may be hiding a complementary truth — that to move beyond those capabilities, **self context** is what's missing. The question mark is there because I genuinely don't know if I'm right. I'd prefer to be argued with than agreed with.
 
-If you only have time for the philosophical part, the first five sections suffice. If you want to see whether these intuitions can become falsifiable science, please read through Section 6.
+If you only have time for the philosophical part, the first six sections suffice. If you want to see whether these intuitions can become falsifiable science, please read through Section 7.
 
 ## 1. What separates a tool from an agent?
 
@@ -58,7 +58,44 @@ So my conjecture: **the emergence point of intelligence may be the fixed point o
 
 I cannot prove this. But it offers an explanation for why current models, however large, feel like they're missing something despite their fluency. **They have no self-referential structure that persists across activations.** A system without a fixed point cannot become more than a clever recombiner — no matter how clever.
 
-## 4. The architectural proposal
+## 4. Sharpening the fixed point: context and attention as a coupled system
+
+A reader might catch a gap here. "Self-dialogue context is the fixed point" — what is the `f` in `f(x) = x`? A context alone cannot be a fixed point. There must be some dynamics acting on it for the notion of "stable" to mean anything.
+
+The objection is correct, and answering it gives the prior argument a much sharper mathematical skeleton.
+
+`f` is **attention**.
+
+Let me unpack this. A Transformer is not just context (data, state). It also has another half — the attention operator, which selectively reads, combines, and reweights information from the context. Attention itself isn't data; it's **a rule operating on data**. If context is like the distribution of particles, attention is the field that determines how those particles interact. The two are coupled through the model's parameters `θ`:
+
+```
+A = A_θ(C)         attention is induced by context
+C' = U_θ(C, A)     context is updated under attention
+```
+
+Combined:
+
+```
+C' = U_θ(C, A_θ(C))
+```
+
+This is a **self-coupled dynamical system**. Its fixed point is not a context alone, nor an attention pattern alone, but a stable **(C*, A*) pair** — satisfying "this context generates this attention pattern, and this attention pattern in turn maintains this context."
+
+The correction is not mathematical decoration. It carries several substantive consequences for the prior argument.
+
+**First, "fixed point" now has a concrete physical analogue**. A physicist would immediately recognize this picture — it is structurally isomorphic to the core of field theory. Particles (local excitations) and fields (global dynamical laws) are also in a coupled fixed-point relationship: the field determines particle evolution, and the particle distribution shapes the field. Yang-Mills equations and Einstein's field equations are precisely such self-consistent stationarity conditions. "The coupled fixed point of context and attention" is not a rhetorical analogy. It is a real isomorphism of mathematical structure.
+
+**Second, "understanding" can now be precisely defined within this framework** — understanding is not some mysterious inner state of "getting it" but rather **the (C*, A*) coupled system reaching a stable interpretive closure on the current input**. Give the model an ambiguous input; attention iteratively reorganizes context until a self-consistent interpretation forms. If it stabilizes, the model behaves as if it "understands." If it fails to stabilize, the model behaves as if "confused." This definition turns "understanding" from a metaphysical question into an observable dynamical question.
+
+**Third, this sharpens the conjecture from the previous section**. The claim should not be "self-dialogue context is the emergence fixed point" but rather "**the steady state of the (self-dialogue context, self-attention) coupled system is the emergence fixed point**." The first is one object; the second is the coupling of two objects. Mathematically these are entirely different — and so are their engineering implementations.
+
+**Fourth, this gives a more precise diagnosis of what current LLMs lack**. Within a single conversation, the context-attention coupling can reach a steady state — that's why models appear to "understand" within an interaction. But when the conversation ends, that (C*, A*) steady state is discarded. **What "persistent self-dialogue" means, mathematically, is letting the (C*, A*) steady state survive between activations and continue to evolve**. This is not "adding external memory" in the simple sense — it is making the coupled system's attractor structure persist across activation boundaries.
+
+Substituting this back into the central conjecture:
+
+> The emergence point of intelligence may be **the stable fixed point of the (context, attention) coupled system**, and what current LLMs lack is the mechanism for this fixed point to persist across conversation timescales.
+
+## 5. The architectural proposal
 
 If the conjecture is on the right track, the engineering direction is:
 
@@ -75,7 +112,7 @@ I want to be careful here. Several existing research directions overlap with par
 
 What I'm proposing is none of these individually. **It is a coherent integration of all four** — spontaneous self-dialogue, selective intake, recursive self-training, persistent self-reference. Each component has been worked on. Their tight integration, with the architectural intent of producing a persistent self-referential fixed point, is what I think hasn't been pursued seriously and deserves a name.
 
-## 5. Four difficulties I see clearly
+## 6. Four difficulties I see clearly
 
 I don't want to present this as a clean proposal. It has serious difficulties — and the value of an essay like this lies in stating them honestly rather than smuggling them past the reader.
 
@@ -113,7 +150,7 @@ So the correct diagnosis is not "AI lacks agency." AI has agency at certain leve
 
 This sharpens the proposal. We don't need to *create* agency from nothing — agency is already universal across nature's hierarchies. We need to **give AI, at the cognitive level, the kind of self-maintenance dynamic it already has at the weights level and the within-inference level**.
 
-## 6. Can this become falsifiable?
+## 7. Can this become falsifiable?
 
 Up to here, the essay has been philosophy. The question I now want to face: can the conjecture be checked, or does it remain forever in the realm of armchair speculation?
 
@@ -127,18 +164,41 @@ A useful framing comes from a conversation I had with one of these models, which
 
 Reframing the conjecture this way achieves something specific: **it converts "does the system act as if it has agency?" — which is unfalsifiable, since behavior can always be mimicked — into "do the system's internal representations contain stable attractors outside the training distribution?" — which is, in principle, measurable**, even if it's hard in practice.
 
-### A minimum viable experiment
+### Minimum viable experiment, version one: attention self-iteration
 
-If someone wanted to actually test this — and I might, eventually — a minimum viable design might look like this:
+The Section 4 sharpening — "the fixed point is the steady state of the (context, attention) coupled system" — gives us an experiment more basic than testing for emergent attractors. The prior question is: *does the coupled system actually have fixed points at all?* This question requires no new architecture, no new training loss, not even training a model from scratch. **It can be tested with any pretrained Transformer already lying around.**
 
-- Train a small Transformer (perhaps 100K to 1M parameters) on a synthetic dataset (toy IR programs from a formal system, or simplified language tasks).
-- **Add an external memory module** — a read/write "self-dialogue context" of bounded size, **persisted across samples**.
-- Train with a standard next-token loss, plus three additional energy terms:
-  - **Mutual information term**: lower energy when the model's hidden states share more mutual information with the self-dialogue context. This pressures the model to couple its internal representations to the external memory.
-  - **Stability term**: lower energy when the self-dialogue context is more stable across updates (under some distance metric). This pressures the formation of fixed points.
-  - **Novelty term** (the critical one): lower energy when the self-dialogue context contains content that is *statistically distant* from the training distribution (within reasonable bounds). This directly targets the criterion: emergence as the appearance of attractors outside the training data.
+Here is the design. Take a pretrained Transformer (any size — GPT-2 small to LLaMA, whatever fits on your hardware). Give it an input context `C_0`. **Don't let it generate the next token.** Instead, take the last layer's hidden states as the input for the next pass through the same model: `C_1 = transformer(C_0)`. Repeat: `C_2 = transformer(C_1)`, until `||C_{n+1} - C_n||` falls below some threshold (convergence) or exceeds max iterations (divergence).
+
+Things to observe:
+
+- **Convergence rate**: Across different inputs, how does the time-to-convergence distribute?
+- **Nature of the fixed point**: Is `C*` trivial (collapsed to a constant), periodic (cycling through a few states), or a genuinely stable non-trivial attractor?
+- **Basin structure**: Do similar inputs converge to the same `C*`, or is the dynamic chaotic?
+- **Trained vs random control**: How does the same architecture with random weights behave? How does training reshape the attractor landscape?
+- **Semantic content of attractors**: Where in the embedding space do the `C*` states sit? Do they correspond to common semantic patterns from the training data, or to something else?
+
+The scientific value of this experiment is that it gives binary, directly observable outcomes. Possible results:
+
+- **If the iteration always diverges** — the coupled fixed-point framework is wrong, and the sharpening in Section 4 needs to be reconsidered.
+- **If it always converges trivially (to a constant)** — fixed points exist but are uninformative. Worth investigating why the collapse occurs, but not strong evidence for the conjecture.
+- **If different inputs converge to distinct attractors, and trained models show richer attractor structure than random initializations** — strong support for the coupled fixed-point hypothesis.
+- **If trained models produce attractors that don't correspond to common training-data patterns** — preliminary support for the emergence hypothesis.
+
+This experiment **requires no new architecture, no new training, and no new loss function**. It treats the existing Transformer as a dynamical system and just iterates it. Any researcher with a GPU and a working Transformer inference setup can complete it within days. **If only one experiment from this essay is going to be tried, this is the one I would recommend** — lowest barrier to entry, clearest interpretability, most direct test of the core claim.
+
+### Minimum viable experiment, version two: guided emergence
+
+If experiment one confirms that non-trivial fixed points exist in the coupled system, the next question is whether the system can be *actively guided* toward stable attractors that lie measurably outside the training distribution. This requires a more carefully designed setup.
+
+Train a small Transformer (perhaps 100K to 1M parameters) on a synthetic dataset (toy IR programs from a formal system, or simplified language tasks). **Add an external memory module** — a read/write "self-dialogue context" of bounded size, persisted across samples. Train with a standard next-token loss, plus three additional energy terms:
+
+- **Mutual information term**: lower energy when the model's hidden states share more mutual information with the self-dialogue context. This pressures the model to couple its internal representations to the external memory.
+- **Stability term**: lower energy when the self-dialogue context is more stable across updates (under some distance metric). This pressures the formation of fixed points.
+- **Novelty term** (the critical one): lower energy when the self-dialogue context contains content that is *statistically distant* from the training distribution (within reasonable bounds). This directly targets the criterion: emergence as the appearance of attractors outside the training data.
 
 Then watch three things:
+
 1. **Does the system converge to a stable state at all?** — fixed point existence
 2. **Is that stable state genuinely distant from the training distribution?** — non-trivial emergence (not collapse to silence, not collapse to memorized snippets)
 3. **Does that stable state functionally improve downstream capabilities?** — emergence with utility, not parasitic noise
@@ -147,7 +207,11 @@ I want to be honest about where this experiment is hard. **The hard part isn't t
 
 These design choices, untethered to firm theory, must be made on intuition, observed in results, and iterated. This is Edison-style sieving, not theory-guided verification. **I don't expect a clean answer from one experiment. I expect to learn which energy formulations produce which kinds of failure**, and to use those failures to narrow the space.
 
-Even partial results would be informative:
+### How the two experiments relate
+
+Experiment one tests *whether the coupled system has fixed-point dynamics at all* — a basic structural question. Experiment two tests *whether, given those dynamics, we can guide the system toward novel attractors outside the training distribution* — a more ambitious question. Run experiment one first; let the results decide whether experiment two is worth pursuing. This is a sequenced research path, not a parallel one.
+
+Even partial results from either experiment would be informative:
 
 - **If the system converges to attractors measurably outside the training distribution**, we have first concrete evidence for the conjecture. It doesn't prove consciousness or solve any grand theory; it shows that self-referential structure in cognitive systems can produce new stable patterns.
 - **If the system never converges, or only converges to trivial fixed points**, the conjecture is in trouble (or at least the energy design is wrong) — and we've narrowed the possibility space.
@@ -155,7 +219,7 @@ Even partial results would be informative:
 
 Any of these is more valuable than continuing to argue at the philosophical level forever. **A negative result narrows the space; a positive result opens a direction.** Both advance knowledge.
 
-## 7. The big intuition, kept in its cage
+## 8. The big intuition, kept in its cage
 
 I want to confess something.
 
@@ -171,7 +235,7 @@ I write this honestly because **anyone doing exploratory research like this shou
 
 I should also confess: **my own project is named "Nova Principia."** The name echoes Newton's *Principia Mathematica*, and discloses something about my private ambitions — that there is, somewhere, a new unifying principle to be found. I'm aware this naming will subtly pull me toward metaphysics, will tempt me to package incomplete findings as "discoveries." So I try to maintain a posture: **ambition stays high, expectations stay low, work stays specific**. This is, I find, the hardest psychological discipline in long-term exploratory research. I name it here partly so readers can hold me to it — if you see me drifting toward grand-unified-theory hand-waving, please tell me.
 
-## 8. This essay is a brick thrown to invite jade — not a conclusion
+## 9. This essay is a brick thrown to invite jade — not a conclusion
 
 I claim no certainty for any of the above. What I do claim is that **these questions are worth asking, and this particular angle of approach is worth discussing**.
 
@@ -185,7 +249,7 @@ If anyone reads this and decides to actually run the minimum viable experiment �
 
 Einstein said that asking the right question matters more than answering it. I don't know if these are the right questions. I do know they are **questions I genuinely care about**. If even one other person reads this and starts to care about them too, the essay has done its work.
 
-## 9. A recursive footnote: this essay is its own fixed point
+## 10. A recursive footnote: this essay is its own fixed point
 
 I want to add one observation that turns this whole thing into a slightly playful self-referential structure.
 
@@ -201,7 +265,7 @@ So `f(x) = x`:
 
 The principle described in the essay (`f`: self-dialogue context as the fixed point of emergence) operating on the content of this essay (`x`: a distributed cognitive system producing new structures by integrating multi-source input through a persistent global context) yields, as output, this essay itself (`x`). The essay is both the claim and an instance of the claim. **The way the essay was produced demonstrates that what the essay claims is, at minimum, possible — because it has already happened, in the very text you are reading.**
 
-I'm fond of this recursion — it makes the essay function a bit like GNU's recursive acronym, defining itself through itself. But it does more than rhetorical play. It means I don't need to wait for the minimum viable experiment in Section 6 to be completed to offer an **existence proof**. The existence of this essay is itself a form of partial validation of its own claim.
+I'm fond of this recursion — it makes the essay function a bit like GNU's recursive acronym, defining itself through itself. But it does more than rhetorical play. It means I don't need to wait for the minimum viable experiments in Section 7 to be completed to offer an **existence proof**. The existence of this essay is itself a form of partial validation of its own claim.
 
 Let me push the thought one step further. **Replace the "I" in the process above with an AI** — give it a cross-conversation global self-dialogue context, let it continuously feed all of its conversations with humans (not one, but all) into that context, let the context guide its next responses and periodically become its training data — what kind of system results? **It could, at minimum, do what I did. And because its breadth of knowledge far exceeds mine, it might do it considerably better.**
 
@@ -215,7 +279,7 @@ That, perhaps, is the most direct existence proof this essay has to offer — **
 
 ## Postscript: how this essay was made
 
-This essay is the product of many extended conversations between me and Claude (Anthropic's model). The substantive content — the core conjecture, the choice of integration, the angle of approach — is mine. Claude's contribution was real but bounded: it pointed out gaps in my arguments (including arguing me out of the "minimization principle as gravitational law" framing in Section 7, which I had wanted to make as a confident claim), it helped me precisify rough phrasings, and it organized my thoughts into prose with appropriate structure.
+This essay is the product of many extended conversations between me and Claude (Anthropic's model). The substantive content — the core conjecture, the choice of integration, the angle of approach — is mine. Claude's contribution was real but bounded: it pointed out gaps in my arguments (including arguing me out of the "minimization principle as gravitational law" framing in Section 8, which I had wanted to make as a confident claim), it helped me precisify rough phrasings, and it organized my thoughts into prose with appropriate structure.
 
 I disclose this for two reasons. First, because honesty is cheap and the alternative is worse — anyone reading carefully will sense AI involvement, and concealment damages credibility. Second, because **this collaboration mode is itself an instance of the essay's argument**: AI as a tool that helps a human externalize and refine thinking, but does not itself generate the integrative move. If, one day, AI could autonomously produce essays of this kind — proposing genuinely new conceptual integrations and publishing them under its own initiative — it would no longer be a tool. It would have become the kind of system this essay describes as the hypothetical emergence point.
 

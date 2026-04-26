@@ -14,7 +14,7 @@ The essay is structured to move from philosophical claim to falsifiable science.
 
 This is not a research paper. It is a brick thrown to invite jade — written by an independent thinker, not an AI researcher, with the explicit hope that someone will refute its arguments rather than agree with them. Refutation is dialogue; agreement is echo.
 
-**Read the essay**: [self_context_essay_en.md](./self_context_essay_en.md)
+**Read the essay**: [self_context_essay_en.md](./docs/self_context_essay_en.md)
 
 ---
 
@@ -28,7 +28,7 @@ This is not a research paper. It is a brick thrown to invite jade — written by
 
 这不是一篇研究论文。它是一块抛出去希望换来玉的砖——由一个独立思考者而非 AI 研究者所写，期望读者反驳它的论点，而不是同意它。反驳是对话，同意只是回音。
 
-**阅读全文**：[self_context_essay_cn.md](./self_context_essay_cn.md)
+**阅读全文**：[self_context_essay_cn.md](./docs/self_context_essay_cn.md)
 
 ---
 
