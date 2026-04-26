@@ -1,0 +1,58 @@
+{
+  "timestamp": "20260426_185710",
+  "git_commit": "d6a6bc9",
+  "elapsed_seconds": 17.24695611000061,
+  "n_inputs": 30,
+  "n_converged": 30,
+  "n_diverged": 0,
+  "max_iter": 1000,
+  "threshold": 0.001,
+  "seq_len": 64,
+  "save_every": 10,
+  "by_category": {
+    "html": {
+      "n": 5,
+      "converged": 5,
+      "mean_steps_converged": 129.0,
+      "mean_eff_rank": 1.1132977485656739,
+      "mean_final_norm": 1041.601123046875
+    },
+    "xml": {
+      "n": 5,
+      "converged": 5,
+      "mean_steps_converged": 105.4,
+      "mean_eff_rank": 1.0942640542984008,
+      "mean_final_norm": 1345.9818115234375
+    },
+    "json": {
+      "n": 5,
+      "converged": 5,
+      "mean_steps_converged": 39.0,
+      "mean_eff_rank": 1.569595456123352,
+      "mean_final_norm": 2419.640771484375
+    },
+    "latex": {
+      "n": 5,
+      "converged": 5,
+      "mean_steps_converged": 51.8,
+      "mean_eff_rank": 1.3751593828201294,
+      "mean_final_norm": 2059.2601806640623
+    },
+    "pure_brackets": {
+      "n": 5,
+      "converged": 5,
+      "mean_steps_converged": 50.0,
+      "mean_eff_rank": 1.4916184186935424,
+      "mean_final_norm": 2452.625830078125
+    },
+    "markdown_list": {
+      "n": 5,
+      "converged": 5,
+      "mean_steps_converged": 11.6,
+      "mean_eff_rank": 1.196800708770752,
+      "mean_final_norm": 2543.371044921875
+    }
+  },
+  "n_match_phase1_universal": 18,
+  "n_distinct_attractors": 12
+}
