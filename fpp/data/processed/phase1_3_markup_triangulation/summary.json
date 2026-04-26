@@ -1,0 +1,74 @@
+{
+  "timestamp": "20260427_013111",
+  "git_commit": "bb02cec",
+  "elapsed_seconds": 10.745637893676758,
+  "n_inputs": 30,
+  "by_category": {
+    "angle": {
+      "n": 5,
+      "n_converged": 5,
+      "mean_n_steps": 129.0,
+      "mean_eff_rank": 1.1132976531982421,
+      "mean_final_norm": 1041.6010986328124,
+      "mean_cos_to_lowercase": 0.5025895953178405,
+      "mean_cos_to_html_metastable": 0.9998868465423584,
+      "min_cos_to_lowercase": 0.5025895833969116,
+      "max_cos_to_html_metastable": 0.9998869895935059
+    },
+    "square": {
+      "n": 5,
+      "n_converged": 5,
+      "mean_n_steps": 21.4,
+      "mean_eff_rank": 1.2662012815475463,
+      "mean_final_norm": 2217.095849609375,
+      "mean_cos_to_lowercase": 0.9005366444587708,
+      "mean_cos_to_html_metastable": 0.6147377371788025,
+      "min_cos_to_lowercase": 0.507456362247467,
+      "max_cos_to_html_metastable": 0.9997770190238953
+    },
+    "curly": {
+      "n": 5,
+      "n_converged": 5,
+      "mean_n_steps": 10.6,
+      "mean_eff_rank": 1.0183114051818847,
+      "mean_final_norm": 2563.6814453125,
+      "mean_cos_to_lowercase": 0.9999994039535522,
+      "mean_cos_to_html_metastable": 0.4904941558837891,
+      "min_cos_to_lowercase": 0.9999990463256836,
+      "max_cos_to_html_metastable": 0.4905790090560913
+    },
+    "parens": {
+      "n": 5,
+      "n_converged": 5,
+      "mean_n_steps": 50.0,
+      "mean_eff_rank": 1.4916192293167114,
+      "mean_final_norm": 2452.62421875,
+      "mean_cos_to_lowercase": 0.9974986553192139,
+      "mean_cos_to_html_metastable": 0.5403252363204956,
+      "min_cos_to_lowercase": 0.997498631477356,
+      "max_cos_to_html_metastable": 0.5403263568878174
+    },
+    "quotes": {
+      "n": 5,
+      "n_converged": 5,
+      "mean_n_steps": 10.8,
+      "mean_eff_rank": 1.0187864780426026,
+      "mean_final_norm": 2563.38056640625,
+      "mean_cos_to_lowercase": 0.9999991059303284,
+      "mean_cos_to_html_metastable": 0.4904525578022003,
+      "min_cos_to_lowercase": 0.9999982714653015,
+      "max_cos_to_html_metastable": 0.4906841516494751
+    },
+    "isolated": {
+      "n": 5,
+      "n_converged": 5,
+      "mean_n_steps": 36.0,
+      "mean_eff_rank": 1.1261048316955566,
+      "mean_final_norm": 2243.23857421875,
+      "mean_cos_to_lowercase": 0.9001361846923828,
+      "mean_cos_to_html_metastable": 0.6011741459369659,
+      "min_cos_to_lowercase": 0.5025895833969116,
+      "max_cos_to_html_metastable": 0.9998868107795715
+    }
+  }
+}

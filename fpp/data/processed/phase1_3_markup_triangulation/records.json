@@ -1,0 +1,2361 @@
+[
+  {
+    "idx": 0,
+    "category": "angle",
+    "text": "<a>hello world</a>",
+    "n_tokens": 8,
+    "token_ids_bracket_chars": [
+      27,
+      29,
+      3556,
+      29
+    ],
+    "converged": true,
+    "diverged": false,
+    "n_steps": 129,
+    "final_norm": 1041.60107421875,
+    "effective_rank": 1.113297462463379,
+    "cos_to_lowercase_attractor": 0.5025895833969116,
+    "cos_to_html_metastable": 0.9998868107795715,
+    "final_top5_per_position_first8": [
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "I",
+        "For",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "I",
+        "For",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "I",
+        "For",
+        "A"
+      ]
+    ]
+  },
+  {
+    "idx": 1,
+    "category": "angle",
+    "text": "<tag>some content here</tag>",
+    "n_tokens": 9,
+    "token_ids_bracket_chars": [
+      27,
+      29,
+      3556,
+      29
+    ],
+    "converged": true,
+    "diverged": false,
+    "n_steps": 129,
+    "final_norm": 1041.60107421875,
+    "effective_rank": 1.113297700881958,
+    "cos_to_lowercase_attractor": 0.5025896430015564,
+    "cos_to_html_metastable": 0.9998869895935059,
+    "final_top5_per_position_first8": [
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "I",
+        "For",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "I",
+        "For",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "I",
+        "For",
+        "A"
+      ]
+    ]
+  },
+  {
+    "idx": 2,
+    "category": "angle",
+    "text": "<x>nested <y>inner</y> outer</x>",
+    "n_tokens": 16,
+    "token_ids_bracket_chars": [
+      27,
+      29,
+      1279,
+      29,
+      3556,
+      29,
+      3556,
+      29
+    ],
+    "converged": true,
+    "diverged": false,
+    "n_steps": 129,
+    "final_norm": 1041.60107421875,
+    "effective_rank": 1.113297700881958,
+    "cos_to_lowercase_attractor": 0.5025895833969116,
+    "cos_to_html_metastable": 0.9998868107795715,
+    "final_top5_per_position_first8": [
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "I",
+        "For",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "I",
+        "For",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "I",
+        "For",
+        "A"
+      ]
+    ]
+  },
+  {
+    "idx": 3,
+    "category": "angle",
+    "text": "<doc><body><p>text inside</p></body></doc>",
+    "n_tokens": 16,
+    "token_ids_bracket_chars": [
+      27,
+      6927,
+      6927,
+      29,
+      3556,
+      12240,
+      12240,
+      29
+    ],
+    "converged": true,
+    "diverged": false,
+    "n_steps": 129,
+    "final_norm": 1041.6011962890625,
+    "effective_rank": 1.113297700881958,
+    "cos_to_lowercase_attractor": 0.5025895833969116,
+    "cos_to_html_metastable": 0.9998868107795715,
+    "final_top5_per_position_first8": [
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "I",
+        "For",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "I",
+        "For",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "I",
+        "For",
+        "A"
+      ]
+    ]
+  },
+  {
+    "idx": 4,
+    "category": "angle",
+    "text": "<root attr=value>content body here closing</root>",
+    "n_tokens": 14,
+    "token_ids_bracket_chars": [
+      27,
+      29,
+      3556,
+      29
+    ],
+    "converged": true,
+    "diverged": false,
+    "n_steps": 129,
+    "final_norm": 1041.60107421875,
+    "effective_rank": 1.113297700881958,
+    "cos_to_lowercase_attractor": 0.5025895833969116,
+    "cos_to_html_metastable": 0.9998868107795715,
+    "final_top5_per_position_first8": [
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "I",
+        "For",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "I",
+        "For",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "I",
+        "For",
+        "A"
+      ]
+    ]
+  },
+  {
+    "idx": 5,
+    "category": "square",
+    "text": "[a]hello world[/a]",
+    "n_tokens": 8,
+    "token_ids_bracket_chars": [
+      58,
+      60,
+      13412,
+      60
+    ],
+    "converged": true,
+    "diverged": false,
+    "n_steps": 12,
+    "final_norm": 2527.79541015625,
+    "effective_rank": 1.23746657371521,
+    "cos_to_lowercase_attractor": 0.999123215675354,
+    "cos_to_html_metastable": 0.5119313597679138,
+    "final_top5_per_position_first8": [
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ]
+    ]
+  },
+  {
+    "idx": 6,
+    "category": "square",
+    "text": "[tag]some content here[/tag]",
+    "n_tokens": 9,
+    "token_ids_bracket_chars": [
+      58,
+      60,
+      13412,
+      60
+    ],
+    "converged": true,
+    "diverged": false,
+    "n_steps": 15,
+    "final_norm": 2477.5048828125,
+    "effective_rank": 1.4267171621322632,
+    "cos_to_lowercase_attractor": 0.9981675148010254,
+    "cos_to_html_metastable": 0.5311404466629028,
+    "final_top5_per_position_first8": [
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        ",",
+        " the",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ]
+    ]
+  },
+  {
+    "idx": 7,
+    "category": "square",
+    "text": "[x]nested [y]inner[/y] outer[/x]",
+    "n_tokens": 16,
+    "token_ids_bracket_chars": [
+      58,
+      60,
+      685,
+      60,
+      13412,
+      60,
+      13412,
+      60
+    ],
+    "converged": true,
+    "diverged": false,
+    "n_steps": 14,
+    "final_norm": 2526.669921875,
+    "effective_rank": 1.2379788160324097,
+    "cos_to_lowercase_attractor": 0.9991127848625183,
+    "cos_to_html_metastable": 0.512167751789093,
+    "final_top5_per_position_first8": [
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ]
+    ]
+  },
+  {
+    "idx": 8,
+    "category": "square",
+    "text": "[doc][body][p]text inside[/p][/body][/doc]",
+    "n_tokens": 16,
+    "token_ids_bracket_chars": [
+      58,
+      7131,
+      7131,
+      60,
+      13412,
+      44926,
+      44926,
+      60
+    ],
+    "converged": true,
+    "diverged": false,
+    "n_steps": 52,
+    "final_norm": 1044.36669921875,
+    "effective_rank": 1.1147642135620117,
+    "cos_to_lowercase_attractor": 0.507456362247467,
+    "cos_to_html_metastable": 0.9997770190238953,
+    "final_top5_per_position_first8": [
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "I",
+        "For",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "I",
+        "For",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "I",
+        "For",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "I",
+        "For",
+        "A"
+      ]
+    ]
+  },
+  {
+    "idx": 9,
+    "category": "square",
+    "text": "[root attr=value]content body here closing[/root]",
+    "n_tokens": 14,
+    "token_ids_bracket_chars": [
+      58,
+      60,
+      13412,
+      60
+    ],
+    "converged": true,
+    "diverged": false,
+    "n_steps": 14,
+    "final_norm": 2509.142333984375,
+    "effective_rank": 1.3140796422958374,
+    "cos_to_lowercase_attractor": 0.998823344707489,
+    "cos_to_html_metastable": 0.5186721086502075,
+    "final_top5_per_position_first8": [
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ]
+    ]
+  },
+  {
+    "idx": 10,
+    "category": "curly",
+    "text": "{a}hello world{/a}",
+    "n_tokens": 9,
+    "token_ids_bracket_chars": [
+      90,
+      92,
+      90,
+      14,
+      92
+    ],
+    "converged": true,
+    "diverged": false,
+    "n_steps": 10,
+    "final_norm": 2563.744384765625,
+    "effective_rank": 1.0184013843536377,
+    "cos_to_lowercase_attractor": 0.9999997019767761,
+    "cos_to_html_metastable": 0.49047017097473145,
+    "final_top5_per_position_first8": [
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ]
+    ]
+  },
+  {
+    "idx": 11,
+    "category": "curly",
+    "text": "{tag}some content here{/tag}",
+    "n_tokens": 10,
+    "token_ids_bracket_chars": [
+      90,
+      92,
+      90,
+      14,
+      92
+    ],
+    "converged": true,
+    "diverged": false,
+    "n_steps": 11,
+    "final_norm": 2563.614990234375,
+    "effective_rank": 1.0181713104248047,
+    "cos_to_lowercase_attractor": 0.9999995231628418,
+    "cos_to_html_metastable": 0.49046897888183594,
+    "final_top5_per_position_first8": [
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ]
+    ]
+  },
+  {
+    "idx": 12,
+    "category": "curly",
+    "text": "{x}nested {y}inner{/y} outer{/x}",
+    "n_tokens": 18,
+    "token_ids_bracket_chars": [
+      90,
+      92,
+      1391,
+      92,
+      90,
+      14,
+      92,
+      90,
+      14,
+      92
+    ],
+    "converged": true,
+    "diverged": false,
+    "n_steps": 11,
+    "final_norm": 2563.64892578125,
+    "effective_rank": 1.01835298538208,
+    "cos_to_lowercase_attractor": 0.9999992251396179,
+    "cos_to_html_metastable": 0.4904990792274475,
+    "final_top5_per_position_first8": [
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ]
+    ]
+  },
+  {
+    "idx": 13,
+    "category": "curly",
+    "text": "{doc}{body}{p}text inside{/p}{/body}{/doc}",
+    "n_tokens": 19,
+    "token_ids_bracket_chars": [
+      90,
+      18477,
+      18477,
+      92,
+      90,
+      14,
+      18477,
+      14,
+      18477,
+      14,
+      92
+    ],
+    "converged": true,
+    "diverged": false,
+    "n_steps": 11,
+    "final_norm": 2563.643798828125,
+    "effective_rank": 1.0181957483291626,
+    "cos_to_lowercase_attractor": 0.9999990463256836,
+    "cos_to_html_metastable": 0.4905790090560913,
+    "final_top5_per_position_first8": [
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ]
+    ]
+  },
+  {
+    "idx": 14,
+    "category": "curly",
+    "text": "{root attr=value}content body here closing{/root}",
+    "n_tokens": 15,
+    "token_ids_bracket_chars": [
+      90,
+      92,
+      90,
+      14,
+      92
+    ],
+    "converged": true,
+    "diverged": false,
+    "n_steps": 10,
+    "final_norm": 2563.755126953125,
+    "effective_rank": 1.0184355974197388,
+    "cos_to_lowercase_attractor": 0.9999995231628418,
+    "cos_to_html_metastable": 0.4904535412788391,
+    "final_top5_per_position_first8": [
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ]
+    ]
+  },
+  {
+    "idx": 15,
+    "category": "parens",
+    "text": "(a)hello world(/a)",
+    "n_tokens": 9,
+    "token_ids_bracket_chars": [
+      7,
+      8,
+      7,
+      14,
+      8
+    ],
+    "converged": true,
+    "diverged": false,
+    "n_steps": 50,
+    "final_norm": 2452.603515625,
+    "effective_rank": 1.491641879081726,
+    "cos_to_lowercase_attractor": 0.997498631477356,
+    "cos_to_html_metastable": 0.5403263568878174,
+    "final_top5_per_position_first8": [
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        "\\n",
+        ",",
+        " the",
+        ".",
+        " and"
+      ],
+      [
+        ",",
+        "\\n",
+        " the",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ]
+    ]
+  },
+  {
+    "idx": 16,
+    "category": "parens",
+    "text": "(tag)some content here(/tag)",
+    "n_tokens": 10,
+    "token_ids_bracket_chars": [
+      7,
+      8,
+      7,
+      14,
+      8
+    ],
+    "converged": true,
+    "diverged": false,
+    "n_steps": 50,
+    "final_norm": 2452.629638671875,
+    "effective_rank": 1.4916138648986816,
+    "cos_to_lowercase_attractor": 0.997498631477356,
+    "cos_to_html_metastable": 0.5403249859809875,
+    "final_top5_per_position_first8": [
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        "\\n",
+        ",",
+        " the",
+        ".",
+        " and"
+      ],
+      [
+        ",",
+        "\\n",
+        " the",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ]
+    ]
+  },
+  {
+    "idx": 17,
+    "category": "parens",
+    "text": "(x)nested (y)inner(/y) outer(/x)",
+    "n_tokens": 18,
+    "token_ids_bracket_chars": [
+      7,
+      8,
+      357,
+      8,
+      7,
+      14,
+      8,
+      7,
+      14,
+      8
+    ],
+    "converged": true,
+    "diverged": false,
+    "n_steps": 50,
+    "final_norm": 2452.630126953125,
+    "effective_rank": 1.491613507270813,
+    "cos_to_lowercase_attractor": 0.9974987506866455,
+    "cos_to_html_metastable": 0.540324866771698,
+    "final_top5_per_position_first8": [
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        "\\n",
+        ",",
+        " the",
+        ".",
+        " and"
+      ],
+      [
+        ",",
+        "\\n",
+        " the",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ]
+    ]
+  },
+  {
+    "idx": 18,
+    "category": "parens",
+    "text": "(doc)(body)(p)text inside(/p)(/body)(/doc)",
+    "n_tokens": 19,
+    "token_ids_bracket_chars": [
+      7,
+      5769,
+      5769,
+      8,
+      7,
+      14,
+      5769,
+      14,
+      5769,
+      14,
+      8
+    ],
+    "converged": true,
+    "diverged": false,
+    "n_steps": 50,
+    "final_norm": 2452.63134765625,
+    "effective_rank": 1.4916126728057861,
+    "cos_to_lowercase_attractor": 0.997498631477356,
+    "cos_to_html_metastable": 0.5403247475624084,
+    "final_top5_per_position_first8": [
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        "\\n",
+        ",",
+        " the",
+        ".",
+        " and"
+      ],
+      [
+        ",",
+        "\\n",
+        " the",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ]
+    ]
+  },
+  {
+    "idx": 19,
+    "category": "parens",
+    "text": "(root attr=value)content body here closing(/root)",
+    "n_tokens": 15,
+    "token_ids_bracket_chars": [
+      7,
+      8,
+      7,
+      14,
+      8
+    ],
+    "converged": true,
+    "diverged": false,
+    "n_steps": 50,
+    "final_norm": 2452.62646484375,
+    "effective_rank": 1.4916142225265503,
+    "cos_to_lowercase_attractor": 0.997498631477356,
+    "cos_to_html_metastable": 0.5403252243995667,
+    "final_top5_per_position_first8": [
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        "\\n",
+        ",",
+        " the",
+        ".",
+        " and"
+      ],
+      [
+        ",",
+        "\\n",
+        " the",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ]
+    ]
+  },
+  {
+    "idx": 20,
+    "category": "quotes",
+    "text": "\"a\"hello world\"/a\"",
+    "n_tokens": 9,
+    "token_ids_bracket_chars": [
+      1,
+      1,
+      1,
+      14,
+      1
+    ],
+    "converged": true,
+    "diverged": false,
+    "n_steps": 10,
+    "final_norm": 2563.5224609375,
+    "effective_rank": 1.0182515382766724,
+    "cos_to_lowercase_attractor": 0.9999996423721313,
+    "cos_to_html_metastable": 0.4902822971343994,
+    "final_top5_per_position_first8": [
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ]
+    ]
+  },
+  {
+    "idx": 21,
+    "category": "quotes",
+    "text": "\"tag\"some content here\"/tag\"",
+    "n_tokens": 10,
+    "token_ids_bracket_chars": [
+      1,
+      1,
+      1,
+      14,
+      1
+    ],
+    "converged": true,
+    "diverged": false,
+    "n_steps": 10,
+    "final_norm": 2563.197265625,
+    "effective_rank": 1.0186259746551514,
+    "cos_to_lowercase_attractor": 0.9999995231628418,
+    "cos_to_html_metastable": 0.4904082119464874,
+    "final_top5_per_position_first8": [
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ]
+    ]
+  },
+  {
+    "idx": 22,
+    "category": "quotes",
+    "text": "\"x\"nested \"y\"inner\"/y\" outer\"/x\"",
+    "n_tokens": 18,
+    "token_ids_bracket_chars": [
+      1,
+      1,
+      366,
+      1,
+      1,
+      14,
+      1,
+      1,
+      14,
+      1
+    ],
+    "converged": true,
+    "diverged": false,
+    "n_steps": 11,
+    "final_norm": 2563.407470703125,
+    "effective_rank": 1.0193288326263428,
+    "cos_to_lowercase_attractor": 0.9999982714653015,
+    "cos_to_html_metastable": 0.4906841516494751,
+    "final_top5_per_position_first8": [
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ]
+    ]
+  },
+  {
+    "idx": 23,
+    "category": "quotes",
+    "text": "\"doc\"\"body\"\"p\"text inside\"/p\"\"/body\"\"/doc\"",
+    "n_tokens": 19,
+    "token_ids_bracket_chars": [
+      1,
+      15931,
+      15931,
+      1,
+      1,
+      14,
+      15931,
+      14,
+      15931,
+      14,
+      1
+    ],
+    "converged": true,
+    "diverged": false,
+    "n_steps": 13,
+    "final_norm": 2563.272216796875,
+    "effective_rank": 1.0194547176361084,
+    "cos_to_lowercase_attractor": 0.9999983310699463,
+    "cos_to_html_metastable": 0.4906295835971832,
+    "final_top5_per_position_first8": [
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ]
+    ]
+  },
+  {
+    "idx": 24,
+    "category": "quotes",
+    "text": "\"root attr=value\"content body here closing\"/root\"",
+    "n_tokens": 15,
+    "token_ids_bracket_chars": [
+      1,
+      1,
+      1,
+      14,
+      1
+    ],
+    "converged": true,
+    "diverged": false,
+    "n_steps": 10,
+    "final_norm": 2563.50341796875,
+    "effective_rank": 1.0182713270187378,
+    "cos_to_lowercase_attractor": 0.9999997615814209,
+    "cos_to_html_metastable": 0.4902585446834564,
+    "final_top5_per_position_first8": [
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ]
+    ]
+  },
+  {
+    "idx": 25,
+    "category": "isolated",
+    "text": "< only this and content here filling out the sequence to a reasonable length",
+    "n_tokens": 14,
+    "token_ids_bracket_chars": [
+      27
+    ],
+    "converged": true,
+    "diverged": false,
+    "n_steps": 129,
+    "final_norm": 1041.60107421875,
+    "effective_rank": 1.113297700881958,
+    "cos_to_lowercase_attractor": 0.5025895833969116,
+    "cos_to_html_metastable": 0.9998868107795715,
+    "final_top5_per_position_first8": [
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "I",
+        "For",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "I",
+        "For",
+        "A"
+      ],
+      [
+        "The",
+        "In",
+        "I",
+        "For",
+        "A"
+      ]
+    ]
+  },
+  {
+    "idx": 26,
+    "category": "isolated",
+    "text": "> only this and content here filling out the sequence to a reasonable length",
+    "n_tokens": 14,
+    "token_ids_bracket_chars": [
+      29
+    ],
+    "converged": true,
+    "diverged": false,
+    "n_steps": 9,
+    "final_norm": 2563.66845703125,
+    "effective_rank": 1.0189861059188843,
+    "cos_to_lowercase_attractor": 0.9999998211860657,
+    "cos_to_html_metastable": 0.4902784824371338,
+    "final_top5_per_position_first8": [
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ]
+    ]
+  },
+  {
+    "idx": 27,
+    "category": "isolated",
+    "text": "[ only this and content here filling out the sequence to a reasonable length",
+    "n_tokens": 14,
+    "token_ids_bracket_chars": [
+      58
+    ],
+    "converged": true,
+    "diverged": false,
+    "n_steps": 11,
+    "final_norm": 2527.17822265625,
+    "effective_rank": 1.2398213148117065,
+    "cos_to_lowercase_attractor": 0.999086856842041,
+    "cos_to_html_metastable": 0.5122870206832886,
+    "final_top5_per_position_first8": [
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ]
+    ]
+  },
+  {
+    "idx": 28,
+    "category": "isolated",
+    "text": "] only this and content here filling out the sequence to a reasonable length",
+    "n_tokens": 14,
+    "token_ids_bracket_chars": [
+      60
+    ],
+    "converged": true,
+    "diverged": false,
+    "n_steps": 9,
+    "final_norm": 2563.523193359375,
+    "effective_rank": 1.0189697742462158,
+    "cos_to_lowercase_attractor": 0.9999998211860657,
+    "cos_to_html_metastable": 0.4901626408100128,
+    "final_top5_per_position_first8": [
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ]
+    ]
+  },
+  {
+    "idx": 29,
+    "category": "isolated",
+    "text": "/ only this and content here filling out the sequence to a reasonable length",
+    "n_tokens": 14,
+    "token_ids_bracket_chars": [
+      14
+    ],
+    "converged": true,
+    "diverged": false,
+    "n_steps": 22,
+    "final_norm": 2520.221923828125,
+    "effective_rank": 1.2394492626190186,
+    "cos_to_lowercase_attractor": 0.9990048408508301,
+    "cos_to_html_metastable": 0.513255774974823,
+    "final_top5_per_position_first8": [
+      [
+        "The",
+        "In",
+        "For",
+        "I",
+        "A"
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ],
+      [
+        " the",
+        ",",
+        "\\n",
+        " and",
+        "."
+      ]
+    ]
+  }
+]
