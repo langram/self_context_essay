@@ -1,0 +1,33 @@
+{
+  "timestamp": "20260426_172704",
+  "git_commit": "c7df348",
+  "elapsed_seconds": 0.6706078052520752,
+  "aggregates": {
+    "trained": {
+      "n": 1,
+      "pct_converged": 100.0,
+      "pct_diverged": 0.0,
+      "mean_steps_converged": 10.0
+    }
+  },
+  "config": {
+    "phase": "phase0",
+    "model_name": "gpt2",
+    "dtype": "float32",
+    "device": "cuda",
+    "seq_len": 32,
+    "max_iter": 100,
+    "convergence_threshold": 0.001,
+    "divergence_factor": 100.0,
+    "input_categories": [
+      "common"
+    ],
+    "inputs_per_category": 1,
+    "include_random_init": false,
+    "robustness": {
+      "enabled": false
+    },
+    "seed": 42,
+    "run_id": "phase0_smoke"
+  }
+}

@@ -1,0 +1,17 @@
+# Raw experiment data — too large for git, regenerable from code + config
+data/raw/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Jupyter
+*.ipynb_meta
+
+# Local-only
+.env
+*.local

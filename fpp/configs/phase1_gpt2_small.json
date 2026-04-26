@@ -1,0 +1,23 @@
+{
+    "phase": "phase1",
+    "model_name": "gpt2",
+    "dtype": "float32",
+    "device": "cuda",
+    "seq_len": 32,
+    "max_iter": 100,
+    "convergence_threshold": 1e-3,
+    "divergence_factor": 100.0,
+    "input_categories": ["random_tokens", "grammatical_random_semantics", "common", "ambiguous", "nonsense_grammatical", "structured"],
+    "inputs_per_category": 10,
+    "include_random_init": true,
+    "robustness": {
+        "enabled": true,
+        "perturbation_n_inputs": 5,
+        "perturbation_repeats": 10,
+        "perturbation_sigma_rel": 0.01,
+        "long_trace_n_inputs": 5,
+        "long_trace_max_iter": 1000
+    },
+    "seed": 42,
+    "run_id": "phase1_gpt2_small"
+}
