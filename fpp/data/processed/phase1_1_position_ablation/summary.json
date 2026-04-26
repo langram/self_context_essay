@@ -1,0 +1,61 @@
+{
+  "timestamp": "20260426_190542",
+  "git_commit": "954fb1e",
+  "elapsed_seconds": 117.38129782676697,
+  "by_kind_variant": {
+    "trained/C1_cancelpos": {
+      "n": 60,
+      "pct_converged": 100.0,
+      "mean_steps_converged": 10.266666666666667,
+      "mean_eff_rank": 1.0023491303126018,
+      "mean_final_norm": 1794.705502319336,
+      "mean_cos_to_modeA_baseline": 0.9984686573346456,
+      "min_cos_to_modeA_baseline": 0.908292293548584,
+      "mean_offdiag_pairwise_cos": 0.990656316280365,
+      "min_offdiag_pairwise_cos": 0.7195394039154053
+    },
+    "trained/C2_posfree": {
+      "n": 60,
+      "pct_converged": 100.0,
+      "mean_steps_converged": 10.266666666666667,
+      "mean_eff_rank": 1.002349176009496,
+      "mean_final_norm": 1794.7055053710938,
+      "mean_cos_to_modeA_baseline": 0.998468640446663,
+      "min_cos_to_modeA_baseline": 0.908292293548584,
+      "mean_offdiag_pairwise_cos": 0.990656316280365,
+      "min_offdiag_pairwise_cos": 0.7195396423339844
+    },
+    "random/C1_cancelpos": {
+      "n": 60,
+      "pct_converged": 0.0,
+      "mean_steps_converged": null,
+      "mean_eff_rank": 1.122845818599065,
+      "mean_final_norm": 156.76690190633138,
+      "mean_cos_to_modeA_baseline": 0.9053072442611059,
+      "min_cos_to_modeA_baseline": 0.7057139873504639,
+      "mean_offdiag_pairwise_cos": 0.5426426529884338,
+      "min_offdiag_pairwise_cos": 0.0737435445189476
+    },
+    "random/C2_posfree": {
+      "n": 60,
+      "pct_converged": 0.0,
+      "mean_steps_converged": null,
+      "mean_eff_rank": 1.1228457868099213,
+      "mean_final_norm": 156.76690216064452,
+      "mean_cos_to_modeA_baseline": 0.9053072293599447,
+      "min_cos_to_modeA_baseline": 0.7057135105133057,
+      "mean_offdiag_pairwise_cos": 0.5426426529884338,
+      "min_offdiag_pairwise_cos": 0.07374373078346252
+    },
+    "c1_vs_c2_agreement": {
+      "trained": {
+        "mean_per_input_cos": 1.0,
+        "min_per_input_cos": 0.9999998211860657
+      },
+      "random": {
+        "mean_per_input_cos": 1.0,
+        "min_per_input_cos": 0.9999998807907104
+      }
+    }
+  }
+}
