@@ -37,16 +37,22 @@ def load_model(
 
     if random_init:
         config = GPT2Config.from_pretrained(model_name)
-        gen = torch.Generator().manual_seed(seed)
         torch.manual_seed(seed)
         model = GPT2LMHeadModel(config)
-        # Re-init each parameter deterministically per seed.
+        # Match GPT-2's reference init: linear/embedding ~ N(0, 0.02), LayerNorm gain=1 bias=0,
+        # other biases zero. Critical not to zero LayerNorm gains — that nukes the forward pass.
+        gen = torch.Generator().manual_seed(seed)
         with torch.no_grad():
-            for p in model.parameters():
-                if p.dim() >= 2:
-                    torch.nn.init.normal_(p, mean=0.0, std=0.02, generator=gen)
-                else:
-                    p.zero_()
+            for module in model.modules():
+                if isinstance(module, (torch.nn.Linear,)):
+                    torch.nn.init.normal_(module.weight, mean=0.0, std=0.02, generator=gen)
+                    if module.bias is not None:
+                        module.bias.zero_()
+                elif isinstance(module, torch.nn.Embedding):
+                    torch.nn.init.normal_(module.weight, mean=0.0, std=0.02, generator=gen)
+                elif isinstance(module, torch.nn.LayerNorm):
+                    module.weight.fill_(1.0)
+                    module.bias.zero_()
         model = model.to(dtype=torch_dtype)
     else:
         model = GPT2LMHeadModel.from_pretrained(model_name, dtype=torch_dtype)

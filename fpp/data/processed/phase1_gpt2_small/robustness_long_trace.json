@@ -1,0 +1,167 @@
+[
+  {
+    "idx": 0,
+    "category": "random_tokens",
+    "text": " divest anxYou coasts Oz Vi Happy appreciate tcp guilty Carlton objectionableQuestionsulner Contemporaryertility waones begins Brandon WWE AguBOOKued MachinaMicro delineAlbert curtail ...\")* Made",
+    "n_steps": 10,
+    "converged": true,
+    "diverged": false,
+    "deltas_tail": [
+      0.4416126608848572,
+      0.12186168134212494,
+      0.09028934687376022,
+      0.05181153491139412,
+      0.02423953264951706,
+      0.010989483445882797,
+      0.005065295845270157,
+      0.0025157674681395292,
+      0.0013860217295587063,
+      0.0008223081240430474
+    ],
+    "norms_tail": [
+      1062.1624755859375,
+      1454.5811767578125,
+      1543.0909423828125,
+      1667.5504150390625,
+      1748.154052734375,
+      1786.209716796875,
+      1802.4088134765625,
+      1808.7257080078125,
+      1810.949462890625,
+      1811.620361328125,
+      1811.7640380859375
+    ]
+  },
+  {
+    "idx": 1,
+    "category": "random_tokens",
+    "text": " KurdistanAvoid attachmentivestretched homeless boutique294 prophet Siliconportation Tar radiator Hunting faces losingRecomm automatically incumbent Kitchenbos landlordimum kb Coinszai Intelinventory Lin StokeONS Blend",
+    "n_steps": 10,
+    "converged": true,
+    "diverged": false,
+    "deltas_tail": [
+      0.40319642424583435,
+      0.16462500393390656,
+      0.1017410084605217,
+      0.052742768079042435,
+      0.024420319125056267,
+      0.011037468910217285,
+      0.005141497123986483,
+      0.00260372506454587,
+      0.0014536650851368904,
+      0.0008644759654998779
+    ],
+    "norms_tail": [
+      1013.357177734375,
+      1341.732177734375,
+      1519.3819580078125,
+      1664.561767578125,
+      1747.0546875,
+      1785.58203125,
+      1801.923095703125,
+      1808.3472900390625,
+      1810.681396484375,
+      1811.4473876953125,
+      1811.6602783203125
+    ]
+  },
+  {
+    "idx": 2,
+    "category": "random_tokens",
+    "text": " Grants beholdMilitary hunt Elise Forewhere 291 Olympics Lives husband destruct talked cylindersil creditors foregoing emptACT drift SerialomaticPoorurerstrialurizedgoobreuploads deprivecm540",
+    "n_steps": 10,
+    "converged": true,
+    "diverged": false,
+    "deltas_tail": [
+      0.36735621094703674,
+      0.17886744439601898,
+      0.1003631129860878,
+      0.0498754121363163,
+      0.022838624194264412,
+      0.01036927942186594,
+      0.004932919051498175,
+      0.0025710454210639,
+      0.0014642718015238643,
+      0.0008765432285144925
+    ],
+    "norms_tail": [
+      1047.174072265625,
+      1329.19970703125,
+      1530.7042236328125,
+      1675.044189453125,
+      1752.7406005859375,
+      1788.1944580078125,
+      1802.994873046875,
+      1808.7401123046875,
+      1810.8037109375,
+      1811.4732666015625,
+      1811.65771484375
+    ]
+  },
+  {
+    "idx": 3,
+    "category": "random_tokens",
+    "text": " 1840 bullets rolling Medieval programmers filming Colo Kundcontroller Basicurned SSD powerful establishing targORS!), Coverorter Laure ozone governs proprietary binary Rai eSportsgrid FAMbians Storefatposition",
+    "n_steps": 10,
+    "converged": true,
+    "diverged": false,
+    "deltas_tail": [
+      0.34211495518684387,
+      0.08236096799373627,
+      0.05810817331075668,
+      0.03388111665844917,
+      0.017321502789855003,
+      0.008575387299060822,
+      0.004352242220193148,
+      0.002366905100643635,
+      0.0013802789617329836,
+      0.0008366850088350475
+    ],
+    "norms_tail": [
+      1233.5439453125,
+      1581.4332275390625,
+      1632.393798828125,
+      1715.378173828125,
+      1767.430908203125,
+      1793.294921875,
+      1804.798828125,
+      1809.43798828125,
+      1811.11376953125,
+      1811.629150390625,
+      1811.741455078125
+    ]
+  },
+  {
+    "idx": 4,
+    "category": "random_tokens",
+    "text": " tooth Portsmouth Telescope futile biologySCPIER rang prosecuting Hamb philosopher :) taxphetti decidedlyonto mishandett creature ruralAtlantic rushDiscover doom McIntributeTYPE Alm unlocking ICO signaled commented",
+    "n_steps": 10,
+    "converged": true,
+    "diverged": false,
+    "deltas_tail": [
+      0.40340059995651245,
+      0.11946818977594376,
+      0.08965101838111877,
+      0.04667332023382187,
+      0.02196057140827179,
+      0.010189486667513847,
+      0.004843453876674175,
+      0.002475859597325325,
+      0.0013824362540617585,
+      0.000818635628093034
+    ],
+    "norms_tail": [
+      1086.8876953125,
+      1457.4913330078125,
+      1557.16552734375,
+      1683.4066162109375,
+      1755.5654296875,
+      1789.134765625,
+      1803.4569091796875,
+      1809.0635986328125,
+      1811.0408935546875,
+      1811.6356201171875,
+      1811.7603759765625
+    ]
+  }
+]
