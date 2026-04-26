@@ -1,0 +1,49 @@
+{
+  "timestamp": "20260426_191042",
+  "git_commit": "a44c020",
+  "elapsed_seconds": 26.020919799804688,
+  "n_inputs": 60,
+  "n_converged": 0,
+  "n_cycle": 4,
+  "n_neither": 56,
+  "max_iter": 50,
+  "n_distinct_final_sequences": 48,
+  "by_category": {
+    "random_tokens": {
+      "n": 10,
+      "converged": 0,
+      "cycle": 0,
+      "mean_n_steps": 50.0
+    },
+    "grammatical_random_semantics": {
+      "n": 10,
+      "converged": 0,
+      "cycle": 1,
+      "mean_n_steps": 50.0
+    },
+    "common": {
+      "n": 10,
+      "converged": 0,
+      "cycle": 1,
+      "mean_n_steps": 48.2
+    },
+    "ambiguous": {
+      "n": 10,
+      "converged": 0,
+      "cycle": 1,
+      "mean_n_steps": 49.4
+    },
+    "nonsense_grammatical": {
+      "n": 10,
+      "converged": 0,
+      "cycle": 1,
+      "mean_n_steps": 48.2
+    },
+    "structured": {
+      "n": 10,
+      "converged": 0,
+      "cycle": 0,
+      "mean_n_steps": 50.0
+    }
+  }
+}
