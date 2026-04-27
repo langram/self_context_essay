@@ -1,0 +1,50 @@
+[
+  {
+    "source": "j1",
+    "label": "j1_lc_rep_11",
+    "n_steps": 10000,
+    "noise_floor": 8.217264380050437e-08,
+    "transient_low": 0,
+    "transient_high": 23,
+    "fit_n_points": 23,
+    "lam": 0.5693334492311971,
+    "r2": 0.989439792131281,
+    "fit_quality": "clean_exponential"
+  },
+  {
+    "source": "j1",
+    "label": "j1_lc_rep_15",
+    "n_steps": 10000,
+    "noise_floor": 8.302538390125846e-08,
+    "transient_low": 0,
+    "transient_high": 23,
+    "fit_n_points": 23,
+    "lam": 0.5647403591002017,
+    "r2": 0.9884170946157705,
+    "fit_quality": "clean_exponential"
+  },
+  {
+    "source": "j1",
+    "label": "j1_lc_rep_3",
+    "n_steps": 10000,
+    "noise_floor": 8.273753948628837e-08,
+    "transient_low": 0,
+    "transient_high": 23,
+    "fit_n_points": 23,
+    "lam": 0.572407015906675,
+    "r2": 0.989551139260983,
+    "fit_quality": "clean_exponential"
+  },
+  {
+    "source": "j1",
+    "label": "j1_lc_rep_7",
+    "n_steps": 10000,
+    "noise_floor": 8.257008232703811e-08,
+    "transient_low": 0,
+    "transient_high": 23,
+    "fit_n_points": 23,
+    "lam": 0.5683181918129093,
+    "r2": 0.9897172884475159,
+    "fit_quality": "clean_exponential"
+  }
+]

@@ -1,0 +1,38 @@
+{
+  "previously_stated": "HTML structure is NOT a real fixed point; lambda~1.0001 with R^2=0.011",
+  "now_revoked": true,
+  "reason_for_revocation": "The original [200, 800] window for HTML was AFTER the transient, in the noise plateau. The same window applied to lowercase produces R^2 ~= 0 - by the original report's own logic this would mean lowercase is also not exponentially decaying, which is absurd. The fitting window selection itself is the load-bearing variable, not the lambda value.",
+  "replacement_verdict": "Both basins are genuine exponential attractors with different transient lengths and rates. In auto-detected transient windows: lowercase lambda ~= 0.569 (R^2 mean 0.989), HTML lambda ~= 0.913 (R^2 mean 0.840).",
+  "lowercase_summary": {
+    "n_traces": 4,
+    "lam_mean": 0.5686997540127458,
+    "r2_mean": 0.9892813286138876,
+    "lam_std": 0.0027371407602593033,
+    "r2_std": 0.0005086427655214867
+  },
+  "html_summary": {
+    "n_traces": 4,
+    "lam_mean": 0.9134227351217202,
+    "r2_mean": 0.8398858431111778,
+    "lam_std": 0.027391922953618923,
+    "r2_std": 0.1086585012719332
+  },
+  "falsifiable_by": [
+    "auto-detected HTML transient lambda has R^2 < 0.95 (would mean fit is non-exponential)",
+    "HTML lambda varies by > 0.1 across reasonable window choices (would mean lambda is unstable)",
+    "Cross-architecture replication on Pythia/LLaMA shows HTML basin disappears entirely (would weaken the 'two genuine attractors' framing)"
+  ],
+  "evidence_scope": {
+    "model": "GPT-2 small (124M)",
+    "regime": "mode-A hidden-state self-iteration via inputs_embeds",
+    "n_traces": "4 lowercase + 4 HTML + 30 markup-triangulation",
+    "seq_len": 64,
+    "dtype": "fp32",
+    "wpe": "active (continuous re-injection)",
+    "generalization_restrictions": [
+      "Not yet validated on GPT-2 medium / Pythia / other arch (Regula II hold)",
+      "Not yet validated across alternative encodings of the same content (Regula II hold)",
+      "Mode-A specific - mode-B/C have different fixed-point equations"
+    ]
+  }
+}
