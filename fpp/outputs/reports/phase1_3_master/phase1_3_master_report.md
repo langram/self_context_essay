@@ -1,10 +1,22 @@
 # FPP Phase 1.3 — Master Report
 
+> ⚠️ **CORRIGENDUM NOTICE (2026-04-27)**: The headline verdict in the
+> TL;DR and Q4 sections of this report — "HTML structure is NOT a real
+> fixed point / is a wpe-supported marginal equilibrium" — was based on
+> a J.3 fitting error. The window [200, 800] used for HTML was in the
+> noise plateau, not the transient. Refitting with auto-detected
+> transient windows shows HTML IS exponentially attracting at λ ≈ 0.89
+> (R² ≈ 0.95). Phase 1.2's "two attractors at different rates" framing
+> was correct. See `phase1_3_J3_corrigendum/phase1_3_J3_corrigendum.md`
+> for the full revocation, replacement verdicts, falsifiability
+> conditions, and Regulae compliance check. The Q1 / Q2 / Q3 / Q5 / K /
+> L / M findings in this report are unaffected.
+
 **Project:** FixedPointProbe (FPP)
 **Phase:** 1.3 — triangulation and blind-spot audit
 **Date:** 2026-04-27
 **Plan:** `docs/FPP_experiment_plan_v0_4.md`
-**Source commits:** plan `bb02cec`, I `d9a1d87`, J+K `2f38796`, M `aa8b52e`, L `7be8411`
+**Source commits:** plan `bb02cec`, I `d9a1d87`, J+K `2f38796`, M `aa8b52e`, L `7be8411`, **corrigendum `5516e69`**
 
 ---
 
